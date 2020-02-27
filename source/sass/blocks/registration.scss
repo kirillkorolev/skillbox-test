@@ -1,0 +1,156 @@
+.registration {
+  max-width: 584px;
+  width: 100%;
+  padding: 47px 11.1% 46px 7%;
+  background-color: $registration-bg;
+}
+
+.registration__slogan {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 28px;
+}
+
+.registration__leftovers,
+.registration__start {
+  color: $text-grey;
+  margin-right: 10px;
+}
+
+.registration__date {
+  color: $blue;
+  font-size: 20px;
+  line-height: 20px;
+
+  &--tablet,
+  &--mobile {
+    display: none;
+  }
+}
+
+.registration__leftovers-ammount {
+  color: $blue;
+  font-size: 20px;
+  line-height: 20px;
+
+  &--tablet,
+  &--mobile {
+    display: none;
+  }
+}
+
+.registration__beginning,
+.registration__places {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  letter-spacing: -0.5px;
+}
+
+.registration__beginning {
+  margin-right: 10%;
+}
+
+.registration__details {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .registration {
+    max-width: none;
+    padding: 71px 17% 78px;
+  }
+
+  .registration__slogan {
+    font-size: 38px;
+    line-height: 40px;
+    margin: 0 0 41px 12%;
+  }
+
+  .registration__details {
+    margin: 0 auto 28px;
+    width: 344px;
+    justify-content: space-between;
+  }
+
+  .registration__date {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .registration__leftovers-ammount {
+    margin-left: 6px;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .registration__start {
+    margin-right: 2px;
+  }
+
+  .registration__leftovers {
+    margin-right: 0;
+  }
+
+  .registration__beginning {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .registration__slogan {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 23% 28px 0;
+  }
+
+  .registration {
+    padding: 39px 8% 76px;
+  }
+
+  .registration__details {
+    width: auto;
+    flex-direction: column;
+    margin-bottom: 34px;
+  }
+
+  .registration__beginning {
+    margin-bottom: 15px;
+  }
+
+  .registration__date {
+    &--tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .registration__leftovers-ammount {
+    margin-left: 5px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-light.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-slab-light.woff" as="font">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Skillbox test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async></script>
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header></header>
+  <main>
+    <h1 class="visually-hidden">Тестовое задание Skillbox test</h1>
+    <div class="container">
+      <div class="container__title">Стоимость обучения</div>
+      <div class="container__wrap">
+      <section class="prices">
+        <h2 class="visually-hidden">Цены на курсы</h2>
+        <div class="prices__promo">
+          <div class="prices__promo-wrap">
+            <span class="prices__promo-title">Скидка</span>
+            <span class="prices__promo-ammount">40%</span>
+            <span class="prices__promo-customers">первым 20</span>
+          </div>
+
+        </div>
+
+        <div class="prices__full-course">
+          <div class="prices__full-course-slogan">Полная стоимость курса</div>
+          <div class="prices__full-course-price">
+            <span>50 000</span>
+            <svg class="prices__full-course-icon" width="21" height="27">
+              <use xlink:href="#icon-r-full-course"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="prices__instalment">
+          <div class="prices__instalment-slogan">Рассрочка без первого взноса</div>
+          <div class="prices__instalment-price">
+            <span>2 900</span>
+            <svg class="prices__instalment-icon" width="50" height="106">
+              <use xlink:href="#icon-r-instalment"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="prices__sale">
+          <div class="prices__sale-slogan prices__sale-slogan--desktop">Для первых 20-ти</div>
+          <div class="prices__sale-slogan prices__sale-slogan--tablet">Первым 20-ти</div>
+          <div class="prices__sale-price">
+            <span>29 000</span>
+            <svg class="prices__sale-icon" width="23" height="34">
+              <use xlink:href="#icon-r-sale"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="registration">
+        <h2 class="visually-hidden">Запись на курс</h2>
+        <div class="registration__slogan">Запишитеcь на курс</div>
+
+        <div class="registration__details">
+          <div class="registration__beginning">
+            <div class="registration__start">Старт курса:</div>
+            <span class="registration__date registration__date--desktop">7 сентября</span>
+            <span class="registration__date registration__date--tablet">15 июня</span>
+            <span class="registration__date registration__date--mobile">15 июля</span>
+          </div>
+
+          <div class="registration__places">
+            <div class="registration__leftovers">Осталось:</div>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--desktop">19 мест</span>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--tablet">15 мест</span>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--mobile">12 мест</span>
+          </div>
+        </div>
+
+        <form class="registration__form form" method="post">
+          <fieldset class="form__item form__item--name">
+            <input class="form__input" id="name" name="form-name" type="text" placeholder="Имя" required minlength="3" maxlength="15">
+            <label class="visually-hidden" for="name">Имя</label>
+          </fieldset>
+          <fieldset class="form__item form__item--phone">
+            <input class="form__input" id="phone" name="form-phone" type="tel" placeholder="Телефон" required>
+            <label class="visually-hidden" for="phone">Телефон</label>
+          </fieldset>
+          <fieldset class="form__item form__item--email">
+            <input class="form__input" id="email" name="form-email" type="email" placeholder="Email" required>
+            <label class="visually-hidden" for="email">Email</label>
+          </fieldset>
+
+          <div class="form__wrap">
+            <button class="form__button" type="submit">Записаться</button>
+
+            <div class="form__confirmation">
+              <div class="form__confirmation-wrap">
+                <input class="visually-hidden form__input-checkbox" id="confirm-checkbox" name="confirm" type="checkbox" checked>
+                <label class="form__confirmation-label" for="confirm-checkbox"><span class="visually-hidden">Согласен</span></label>
+              </div>
+              <div class="form__confirmation-text">
+                <div>Я согласен с условиями обработки</div>
+                <a class="form__link" href="#">персональных данных</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-slab-light.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-slab-light.woff" as="font">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Skillbox test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async=""></script>
+</head>
+<body>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check-blue" viewBox="0 0 14 11">
+<path d="M4.91917 10.7918L0.208876 6.01232C-0.0679533 5.73187 -0.0698605 5.27521 0.204617 4.99236C0.479094 4.7095 0.926016 4.70755 1.20285 4.988L5.38279 9.22558L12.7615 0.247703C13.0175 -0.0527826 13.4635 -0.0842871 13.7576 0.177335C14.0517 0.438958 14.0825 0.894636 13.8264 1.19512L5.95077 10.7526C5.82345 10.9032 5.64057 10.9928 5.44597 11C5.23001 11.0008 5.05138 10.9257 4.91917 10.7918Z" fill="#7CE187"></path>
+<path d="M4.91917 10.7918L0.208876 6.01232C-0.0679533 5.73187 -0.0698605 5.27521 0.204617 4.99236C0.479094 4.7095 0.926016 4.70755 1.20285 4.988L5.38279 9.22558L12.7615 0.247703C13.0175 -0.0527826 13.4635 -0.0842871 13.7576 0.177335C14.0517 0.438958 14.0825 0.894636 13.8264 1.19512L5.95077 10.7526C5.82345 10.9032 5.64057 10.9928 5.44597 11C5.23001 11.0008 5.05138 10.9257 4.91917 10.7918Z" fill="#3D3BFF"></path>
+</symbol><symbol id="icon-check-white" viewBox="0 0 15 12">
+<path d="M5.01037 10.8106L0.301116 6.03491C0.0243469 5.75468 0.0224401 5.29839 0.296857 5.01576C0.571273 4.73312 1.0181 4.73118 1.29487 5.01141L5.47389 9.24564L12.851 0.274851C13.1069 -0.0253972 13.5528 -0.0568768 13.8468 0.204539C14.1409 0.465955 14.1717 0.921273 13.9157 1.22152L6.04174 10.7715C5.91445 10.9219 5.73161 11.0114 5.53706 11.0187C5.32114 11.0194 5.14256 10.9444 5.01037 10.8106Z" fill="white"></path>
+</symbol><symbol id="icon-r-full-course" viewBox="0 0 22 27"><path opacity="1" fill-rule="evenodd" clip-rule="evenodd" d="M21.488 7.383a6.126 6.126 0 01-1.282 3.798c-.885 1.573-3.755 2.834-3.755 2.834a8.947 8.947 0 01-3.415.617H6.04v2.795h15.246v2.143H6.04v5.557l3.116.26V27H.647v-1.613l3.116-.26v-5.645L.5 19.5v-2.054l3.263-.05V1.913l-3.116-.26V.023h11.567a10.903 10.903 0 016.874 1.891c1.643 1.356 2.532 3.382 2.4 5.47zm-4.034-4.045a8.133 8.133 0 00-5.24-1.429H6.04v10.83h5.908c2.51 0 4.346-.49 5.507-1.466a4.855 4.855 0 001.74-3.912 4.91 4.91 0 00-1.74-4.023z" fill="currentColor"></path></symbol><symbol id="icon-r-instalment" viewBox="0 0 51 106"><path d="M29.406 27.125c6.068 0 10.782 1.563 14.14 4.688 3.386 3.125 5.079 7.24 5.079 12.343 0 5.157-1.693 9.284-5.078 12.383-3.36 3.099-8.073 4.648-14.14 4.648H17.335v16.797l6.367 1.094V84H3.273v-4.922l6.368-1.094V33.18l-6.368-1.094v-4.961H29.406zm-12.07 28.047h12.07c3.854 0 6.732-1.029 8.633-3.086 1.927-2.083 2.89-4.7 2.89-7.852 0-3.15-.963-5.78-2.89-7.89-1.901-2.11-4.779-3.164-8.633-3.164h-12.07v21.992z" fill="#fff"></path><path fill="#fff" d="M3.5 66h42v4.5h-42z"></path></symbol><symbol id="icon-r-sale" viewBox="0 0 24 34"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.486 9.298c.014 1.722-.48 3.402-1.404 4.781-.97 1.982-4.112 3.57-4.112 3.57-1.187.536-2.46.8-3.74.776H6.565v3.52h16.698v2.7H6.566v6.997l3.413.327v2.03H.661v-2.03l3.413-.327v-7.11L.5 24.555V21.97l3.574-.063V2.41L.66 2.082V.028h12.668c2.68-.196 5.34.645 7.529 2.381 1.8 1.707 2.773 4.26 2.628 6.889zm-4.419-5.095c-1.663-1.333-3.695-1.97-5.738-1.798H6.566V16.04h6.47c2.75 0 4.76-.615 6.031-1.845 1.273-1.235 1.974-3.047 1.906-4.927.097-1.925-.606-3.794-1.906-5.066z" fill="#fff"></path></symbol></svg>
+  </div>
+  <header></header>
+  <main>
+    <h1 class="visually-hidden">Тестовое задание Skillbox test</h1>
+    <div class="container">
+      <div class="container__title">Стоимость обучения</div>
+      <div class="container__wrap">
+      <section class="prices">
+        <h2 class="visually-hidden">Цены на курсы</h2>
+        <div class="prices__promo">
+          <div class="prices__promo-wrap">
+            <span class="prices__promo-title">Скидка</span>
+            <span class="prices__promo-ammount">40%</span>
+            <span class="prices__promo-customers">первым 20</span>
+          </div>
+
+        </div>
+
+        <div class="prices__full-course">
+          <div class="prices__full-course-slogan">Полная стоимость курса</div>
+          <div class="prices__full-course-price">
+            <span>50 000</span>
+            <svg class="prices__full-course-icon" width="21" height="27">
+              <use xlink:href="#icon-r-full-course"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="prices__instalment">
+          <div class="prices__instalment-slogan">Рассрочка без первого взноса</div>
+          <div class="prices__instalment-price">
+            <span>2 900</span>
+            <svg class="prices__instalment-icon" width="50" height="106">
+              <use xlink:href="#icon-r-instalment"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="prices__sale">
+          <div class="prices__sale-slogan prices__sale-slogan--desktop">Для первых 20-ти</div>
+          <div class="prices__sale-slogan prices__sale-slogan--tablet">Первым 20-ти</div>
+          <div class="prices__sale-price">
+            <span>29 000</span>
+            <svg class="prices__sale-icon" width="23" height="34">
+              <use xlink:href="#icon-r-sale"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="registration">
+        <h2 class="visually-hidden">Запись на курс</h2>
+        <div class="registration__slogan">Запишитеcь на курс</div>
+
+        <div class="registration__details">
+          <div class="registration__beginning">
+            <div class="registration__start">Старт курса:</div>
+            <span class="registration__date registration__date--desktop">7 сентября</span>
+            <span class="registration__date registration__date--tablet">15 июня</span>
+            <span class="registration__date registration__date--mobile">15 июля</span>
+          </div>
+
+          <div class="registration__places">
+            <div class="registration__leftovers">Осталось:</div>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--desktop">19 мест</span>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--tablet">15 мест</span>
+            <span class="registration__leftovers-ammount registration__leftovers-ammount--mobile">12 мест</span>
+          </div>
+        </div>
+
+        <form class="registration__form form" method="post">
+          <fieldset class="form__item form__item--name">
+            <input class="form__input" id="name" name="form-name" type="text" placeholder="Имя" required="" minlength="3" maxlength="15">
+            <label class="visually-hidden" for="name">Имя</label>
+          </fieldset>
+          <fieldset class="form__item form__item--phone">
+            <input class="form__input" id="phone" name="form-phone" type="tel" placeholder="Телефон" required="">
+            <label class="visually-hidden" for="phone">Телефон</label>
+          </fieldset>
+          <fieldset class="form__item form__item--email">
+            <input class="form__input" id="email" name="form-email" type="email" placeholder="Email" required="">
+            <label class="visually-hidden" for="email">Email</label>
+          </fieldset>
+
+          <div class="form__wrap">
+            <button class="form__button" type="submit">Записаться</button>
+
+            <div class="form__confirmation">
+              <div class="form__confirmation-wrap">
+                <input class="visually-hidden form__input-checkbox" id="confirm-checkbox" name="confirm" type="checkbox" checked="">
+                <label class="form__confirmation-label" for="confirm-checkbox"><span class="visually-hidden">Согласен</span></label>
+              </div>
+              <div class="form__confirmation-text">
+                <div>Я согласен с условиями обработки</div>
+                <a class="form__link" href="#">персональных данных</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
